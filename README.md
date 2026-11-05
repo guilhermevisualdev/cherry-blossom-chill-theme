@@ -19,6 +19,20 @@ Inspired by cherry blossoms and carefully selected tones, the theme combines **s
 
 ---
 
+## Available Themes
+
+Cherry Blossom Chill is now available in two variations:
+
+### Cherry Blossom Chill Light
+The original theme, featuring a soft and elegant color palette inspired by cherry blossoms.
+
+### Cherry Blossom Chill Dark
+A darker alternative, preserving the extension's signature cherry blossom aesthetic with deeper tones and refined contrasts.
+
+Choose the variation that best suits your coding environment and personal preference!
+
+---
+
 ## 📦 Installation
 
 You can install **Cherry Blossom Chill Theme** directly from the Visual Studio Code Marketplace.

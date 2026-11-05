@@ -4,7 +4,7 @@
   "publisher": "guivisualdev",
   "icon": "icon.png",
   "description": "A chill cherry-blossom based theme to code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.116.0"
   },
