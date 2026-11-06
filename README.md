@@ -33,6 +33,18 @@ Choose the variation that best suits your coding environment and personal prefer
 
 ---
 
+## 📸 Preview
+
+### Cherry Blossom Chill Light
+
+![Cherry Blossom Chill Light](screenshots/cherry-blossom-light.png)
+
+### Cherry Blossom Chill Dark
+
+![Cherry Blossom Chill Dark](screenshots/cherry-blossom-dark.png)
+
+---
+
 ## 📦 Installation
 
 You can install **Cherry Blossom Chill Theme** directly from the Visual Studio Code Marketplace.
@@ -64,13 +76,6 @@ I've always loved cherry blossoms and couldn't find any theme in Visual Studio C
 
 ---
 
-## 📸 Preview
-
-*Screenshots and previews coming soon.*
-
-> 💡 If you liked the theme or have any suggestions, please leave a review so I can consider them and address your needs and/or suggestions.
-
----
 
 ## 💖 Thank You
 
