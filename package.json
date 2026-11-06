@@ -6,9 +6,9 @@
   "description": "A chill cherry-blossom based theme to code",
   "version": "1.0.7",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/guilhermevisualdev/cherry-blossom-chill-theme.git"
-  },
+  "type": "git",
+  "url": "https://github.com/guilhermevisualdev/cherry-blossom-chill-theme.git"
+},
   "engines": {
     "vscode": "^1.116.0"
   },

@@ -37,11 +37,11 @@ Choose the variation that best suits your coding environment and personal prefer
 
 ### Cherry Blossom Chill Light
 
-![Cherry Blossom Chill Light](./screenshots/cherry-blossom-light.png)
+![Cherry Blossom Chill Light](https://raw.githubusercontent.com/guilhermevisualdev/cherry-blossom-chill-theme/main/screenshots/cherry-blossom-light.png)
 
 ### Cherry Blossom Chill Dark
 
-![Cherry Blossom Chill Dark](./screenshots/cherry-blossom-dark.png)
+![Cherry Blossom Chill Dark](https://raw.githubusercontent.com/guilhermevisualdev/cherry-blossom-chill-theme/main/screenshots/cherry-blossom-dark.png)
 
 ---
 
