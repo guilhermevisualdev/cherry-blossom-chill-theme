@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teste: Todas as tags HTML</title>
+
+  <link rel="stylesheet" href="test-theme.css" />
+
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.45; padding: 2rem; color: #111; background: #fff; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    section { margin: 2rem 0; padding: 1rem; border-radius: 8px; background: rgba(0,0,0,0.02); }
+    header, footer { padding: 1rem 0; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+    pre { background:#111; color:#eee; padding:1rem; overflow:auto; border-radius:6px; }
+    .muted { color: #666; font-size: .9rem; }
+    img { max-width:100%; height:auto; }
+    figure { margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <hgroup>
+        <h1>Teste de Tema — Todas as Tags HTML</h1>
+        <h2 class="muted">Arquivo para verificar estilos: tipografia, formulários, botões, estados, etc.</h2>
+      </hgroup>
+
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#texto">Texto</a></li>
+          <li><a href="#midia">Mídia</a></li>
+          <li><a href="#formularios">Formulários</a></li>
+          <li><a href="#tabelas">Tabelas</a></li>
+          <li><a href="#avancado">Elementos avançados</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- TEXTOS E TIPOGRAFIA -->
+    <section id="texto" aria-labelledby="texto-title">
+      <h3 id="texto-title">Tipografia e texto</h3>
+
+      <article>
+        <h4>Cabeçalhos</h4>
+        <h1>H1 — Título principal</h1>
+        <h2>H2 — Subtítulo</h2>
+        <h3>H3 — Seção</h3>
+        <h4>H4 — Subseção</h4>
+        <h5>H5 — Pequeno título</h5>
+        <h6>H6 — Menor</h6>
+      </article>
+
+      <article>
+        <h4>Parágrafos e texto em linha</h4>
+        <p>Parágrafo normal com <strong>strong</strong>, <b>b</b>, <em>em</em>, <i>i</i>, <u>u</u>, <mark>mark</mark>, <small>small</small>, <sub>sub</sub> e <sup>sup</sup>.</p>
+
+        <p>Exemplo de <abbr title="Exemplo de abreviação">abbr</abbr>, <time datetime="2025-11-15">15 Nov 2025</time>, <cite>Fonte Citada</cite>, <q>citação em linha</q> e <code>código inline()</code>.</p>
+
+        <p>Endereço: <address>Nome do Autor<br>Rua Exemplo, 123<br>cidade — país</address></p>
+
+        <blockquote cite="https://example.com">
+          <p>Blockquote: "Este é um exemplo de citação em bloco para testar recuo e estilo."</p>
+          <footer>— <cite>Autor Exemplo</cite></footer>
+        </blockquote>
+      </article>
+
+      <article>
+        <h4>Listas</h4>
+        <div class="grid">
+          <div>
+            <h5>Não ordenada</h5>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2
+                <ul>
+                  <li>Subitem 2.1</li>
+                  <li>Subitem 2.2</li>
+                </ul>
+              </li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Ordenada</h5>
+            <ol>
+              <li>Primeiro</li>
+              <li>Segundo</li>
+              <li>Terceiro</li>
+            </ol>
+          </div>
+
+          <div>
+            <h5>Definição</h5>
+            <dl>
+              <dt>Termo</dt>
+              <dd>Definição do termo.</dd>
+              <dt>Outro termo</dt>
+              <dd>Outra definição com <kbd>teclas</kbd> e <samp>exemplo de saída</samp>.</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h4>Código, pré-formatado e citações</h4>
+        <p>Exemplo inline: <code>const x = 42;</code></p>
+
+        <pre><code>// Bloco de código
+function soma(a, b) {
+  return a + b;
+}
+console.log(soma(2,3));
+</code></pre>
+
+        <p>Tags semânticas de exemplo: <var>x</var>, <samp>resultado</samp>, <kbd>Ctrl + S</kbd>.</p>
+      </article>
+    </section>
+
+    <!-- IMAGENS / MÍDIA -->
+    <section id="midia" aria-labelledby="midia-title">
+      <h3 id="midia-title">Mídia: imagens, figuras, vídeo, áudio, svg e canvas</h3>
+
+      <article>
+        <h4>Imagens e figuras</h4>
+        <figure>
+          <img src="https://via.placeholder.com/600x200.png?text=Placeholder+600x200" alt="placeholder 600x200" />
+          <figcaption>Figura com legenda — figcaption.</figcaption>
+        </figure>
+
+        <p>Imagem responsiva com <picture> e diferentes fontes:</p>
+        <picture>
+          <source media="(min-width:800px)" srcset="https://via.placeholder.com/800x200.png?text=800w">
+          <source media="(min-width:400px)" srcset="https://via.placeholder.com/400x200.png?text=400w">
+          <img src="https://via.placeholder.com/300x200.png?text=300w" alt="exemplo picture">
+        </picture>
+      </article>
+
+      <article>
+        <h4>Vídeo e áudio</h4>
+        <video controls width="480" crossorigin>
+          <source src="sample-video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio.
+        </audio>
+      </article>
+
+      <article>
+        <h4>SVG e Canvas</h4>
+        <!-- SVG inline -->
+        <svg role="img" aria-label="Exemplo SVG" width="200" height="80" viewBox="0 0 200 80">
+          <rect x="0" y="0" width="200" height="80" rx="12" ry="12" fill="rgba(0,0,0,0.06)"></rect>
+          <circle cx="40" cy="40" r="22"></circle>
+          <text x="80" y="45" font-size="16" font-family="sans-serif">SVG Text</text>
+        </svg>
+
+        <!-- Canvas -->
+        <canvas id="myCanvas" width="300" height="80" style="border:1px solid #ccc;">Seu navegador não suporta canvas.</canvas>
+
+        <script>
+          // script pequeno para desenhar no canvas e testar estilos/fonte
+          (function(){
+            const c = document.getElementById('myCanvas');
+            if (!c) return;
+            const ctx = c.getContext('2d');
+            ctx.font = '18px sans-serif';
+            ctx.fillText('Canvas — texto de teste', 10, 40);
+          })();
+        </script>
+      </article>
+    </section>
+
+    <!-- FORMULÁRIOS -->
+    <section id="formularios" aria-labelledby="form-title">
+      <h3 id="form-title">Formulários e controles</h3>
+
+      <form action="#" method="post" autocomplete="on" novalidate>
+        <fieldset>
+          <legend>Informações pessoais</legend>
+
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="email@exemplo.com" required />
+          </p>
+
+          <p>
+            <label for="senha">Senha:</label><br>
+            <input id="senha" name="senha" type="password" minlength="6" />
+          </p>
+
+          <p>
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input id="nascimento" name="nascimento" type="date" />
+          </p>
+
+          <p>
+            <label for="hora">Escolha hora:</label><br>
+            <input id="hora" name="hora" type="time" />
+          </p>
+
+          <p>
+            <label for="cor">Cor favorita:</label><br>
+            <input id="cor" name="cor" type="color" value="#ff0000" />
+          </p>
+
+          <p>
+            <label for="numero">Número:</label><br>
+            <input id="numero" name="numero" type="number" min="0" max="100" value="10" />
+          </p>
+
+          <p>
+            <label for="range">Range:</label><br>
+            <input id="range" name="range" type="range" min="0" max="10" value="3" />
+          </p>
+
+          <p>
+            <label for="tel">Telefone:</label><br>
+            <input id="tel" name="tel" type="tel" placeholder="+55 11 9xxxx-xxxx" />
+          </p>
+
+          <p>
+            <label for="arquivo">Enviar arquivo:</label><br>
+            <input id="arquivo" name="arquivo" type="file" multiple />
+          </p>
+
+          <p>
+            <label for="select">Escolha uma opção:</label><br>
+            <select id="select" name="select">
+              <option value="">-- selecione --</option>
+              <option value="op1">Opção 1</option>
+              <option value="op2">Opção 2</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="textarea">Mensagem:</label><br>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Escreva algo..."></textarea>
+          </p>
+
+          <p>
+            <label for="datalist">Sugestões:</label><br>
+            <input list="sugestoes" id="datalist" name="datalist" />
+            <datalist id="sugestoes">
+              <option value="Sugestão A">
+              <option value="Sugestão B">
+              <option value="Sugestão C">
+            </datalist>
+          </p>
+
+          <p>
+            <input type="checkbox" id="aceito" name="aceito" checked />
+            <label for="aceito">Aceito os termos</label>
+          </p>
+
+          <p>
+            <label>Escolha uma cor:</label><br>
+            <input type="radio" id="r1" name="grupo" value="a"><label for="r1">A</label>
+            <input type="radio" id="r2" name="grupo" value="b" checked><label for="r2">B</label>
+          </p>
+
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+            <button type="button" onclick="alert('botão de teste')">Clique</button>
+          </p>
+
+          <p>
+            <label for="output">Output (exemplo):</label><br>
+            <output id="output" name="result">0</output>
+          </p>
+
+          <p>
+            <meter min="0" max="100" value="70">70%</meter>
+            <progress value="30" max="100">30%</progress>
+          </p>
+        </fieldset>
+      </form>
+
+      <template id="tmpl">
+        <p>Template: conteúdo que não aparece até ser instanciado.</p>
+      </template>
+
+      <script>
+        // exemplo simples para atualizar output e mostrar template
+        (function(){
+          const out = document.getElementById('output');
+          const range = document.getElementById('range');
+          if (out && range) out.textContent = range.value;
+          if (range) range.addEventListener('input', () => { out.textContent = range.value; });
+
+          // ativar template para testes
+          const tmpl = document.getElementById('tmpl');
+          if (tmpl) {
+            const clone = tmpl.content.cloneNode(true);
+            document.getElementById('formularios').appendChild(clone);
+          }
+        })();
+      </script>
+    </section>
+
+    <!-- TABELAS -->
+    <section id="tabelas" aria-labelledby="tabelas-title">
+      <h3 id="tabelas-title">Tabelas</h3>
+
+      <table border="1" summary="Exemplo de tabela">
+        <caption>Exemplo de Tabela</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Ativo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>João</td>
+            <td><a href="mailto:joao@example.com">joao@example.com</a></td>
+            <td><input type="checkbox" checked disabled></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Maria</td>
+            <td><a href="mailto:maria@example.com">maria@example.com</a></td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Rodapé da tabela</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- ELEMENTOS AVANÇADOS / SEMÂNTICOS -->
+    <section id="avancado" aria-labelledby="avancado-title">
+      <h3 id="avancado-title">Elementos semânticos & ARIA</h3>
+
+      <article>
+        <h4>Semântica: article, section, aside</h4>
+        <section>
+          <h5>Seção interna</h5>
+          <p>Texto de exemplo em uma <code>section</code>.</p>
+        </section>
+        <aside>
+          <h5>Aside</h5>
+          <p>Barra lateral — teste de bordas, margens e posicionamento.</p>
+        </aside>
+      </article>
+
+      <article>
+        <h4>Dialogs, details e summary</h4>
+        <details>
+          <summary>Mostrar mais (details/summary)</summary>
+          <p>Conteúdo escondido que aparece ao expandir.</p>
+        </details>
+
+        <dialog id="dlg">Dialog de teste — <button onclick="document.getElementById('dlg').close()">Fechar</button></dialog>
+        <p><button onclick="document.getElementById('dlg').showModal()">Abrir Dialog</button></p>
+      </article>
+
+      <article>
+        <h4>Elementos interativos menos comuns</h4>
+        <p><progress value="50" max="100">50%</progress></p>
+        <p><meter value="0.6" min="0" max="1">60%</meter></p>
+        <p><output name="calc">Resultado</output></p>
+      </article>
+
+      <article>
+        <h4>Microdata / data- attributes</h4>
+        <div itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">Nome Exemplo</span>
+          <meta itemprop="jobTitle" content="Desenvolvedor" />
+        </div>
+        <div data-custom="valor">data-custom: valor</div>
+      </article>
+
+      <article>
+        <h4>ARIA (teste de foco / leitores)</h4>
+        <div role="region" aria-labelledby="aria-title" tabindex="0">
+          <h5 id="aria-title">Região com role</h5>
+          <p>Use o teclado para navegar aqui.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <hr />
+      <p class="muted">Rodapé — <small>© <time datetime="2025-11-15">2025</time> — Arquivo de teste</small></p>
+      <p>
+        Links rápidos:
+        <a href="#texto">texto</a> |
+        <a href="#midia">midia</a> |
+        <a href="#formularios">formularios</a> |
+        <a href="#tabelas">tabelas</a> |
+        <a href="#avancado">avancado</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- scripts finais de exemplo -->
+  <script>
+    // exemplos de acessibilidade: focos, :focus-visible tests
+    (function(){
+      // foco no primeiro input ao carregar
+      const primeiro = document.querySelector('input,button,textarea,select');
+      if (primeiro) primeiro.setAttribute('autofocus','');
+
+      // pequeno listener para demonstrar class em :focus
+      document.addEventListener('focusin', (e) => {
+        e.target.classList.add('is-focused');
+      });
+      document.addEventListener('focusout', (e) => {
+        e.target.classList.remove('is-focused');
+      });
+    })();
+  </script>
+</body>
+</html>

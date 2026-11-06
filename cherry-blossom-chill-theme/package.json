@@ -1,0 +1,32 @@
+{
+  "name": "cherry-blossom-chill-theme",
+  "displayName": "Cherry Blossom Chill Theme",
+  "publisher": "guivisualdev",
+  "icon": "icon.png",
+  "description": "A chill cherry-blossom based theme to code",
+  "version": "1.0.6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilhermevisualdev/cherry-blossom-chill-theme.git"
+  },
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cherry Blossom Chill Light Theme",
+        "uiTheme": "vs-light",
+        "path": "./themes/cherry blossom chill theme-color-theme.json"
+      },
+      {
+        "label": "Cherry Blossom Chill Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cherry-blossom-chill-dark-color-theme.json"
+      }
+    ]
+  }
+}
