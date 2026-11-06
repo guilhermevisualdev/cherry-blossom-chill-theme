@@ -1,6 +1,11 @@
 # Change Log
 
 
+## [1.0.4]
+
+- Added screenshots for preview
+
+
 ## [1.0.1]
 
 - Official release of Cherry Blossom Chill Theme.

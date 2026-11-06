@@ -4,7 +4,11 @@
   "publisher": "guivisualdev",
   "icon": "icon.png",
   "description": "A chill cherry-blossom based theme to code",
-  "version": "1.0.2",
+  "version": "1.0.5",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/guilhermevisualdev/cherry-blossom-chill-theme.git"
+},
   "engines": {
     "vscode": "^1.116.0"
   },
